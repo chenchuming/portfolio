@@ -1,1 +1,391 @@
-My Software Project Portfolio
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Chuming Chen's software projects portfolio - Created and owned repositories for academic and professional proposals">
+    <meta name="author" content="Chuming Chen">
+    <title>Chuming Chen | Software Projects Portfolio</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #2c3e50;
+            background: #f5f7fa;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            overflow: hidden;
+        }
+
+        /* Header */
+        .header {
+            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+            color: white;
+            padding: 40px;
+            text-align: center;
+        }
+
+        .header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+
+        .header p {
+            font-size: 1.1em;
+            opacity: 0.95;
+        }
+
+        .verification-badge {
+            background: rgba(255,255,255,0.2);
+            border-radius: 8px;
+            padding: 12px 20px;
+            margin-top: 20px;
+            display: inline-block;
+            font-size: 0.9em;
+        }
+
+        .verification-badge a {
+            color: #ffd700;
+            text-decoration: none;
+        }
+
+        .verification-badge a:hover {
+            text-decoration: underline;
+        }
+
+        /* Proposal Note */
+        .proposal-note {
+            background: #fff8e7;
+            border-left: 5px solid #f39c12;
+            padding: 20px 30px;
+            margin: 20px 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+        }
+
+        .proposal-note strong {
+            color: #e67e22;
+        }
+
+        /* Section styling */
+        .section {
+            padding: 30px 40px;
+            border-bottom: 1px solid #e0e4e8;
+        }
+
+        .section:last-child {
+            border-bottom: none;
+        }
+
+        .section-title {
+            font-size: 1.8em;
+            color: #1e3c72;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 3px solid #3498db;
+            display: inline-block;
+        }
+
+        /* Project cards */
+        .project-grid {
+            display: grid;
+            gap: 25px;
+            margin-top: 20px;
+        }
+
+        .project-card {
+            background: #fafbfc;
+            border: 1px solid #e1e4e8;
+            border-radius: 10px;
+            padding: 20px;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        .project-card:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+
+        .project-title {
+            font-size: 1.4em;
+            font-weight: 600;
+            color: #2c3e50;
+            margin-bottom: 8px;
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .project-year {
+            font-size: 0.8em;
+            color: #7f8c8d;
+            font-weight: normal;
+            background: #ecf0f1;
+            padding: 3px 10px;
+            border-radius: 20px;
+        }
+
+        .relevance-badge {
+            background: #27ae60;
+            color: white;
+            font-size: 0.75em;
+            padding: 3px 10px;
+            border-radius: 20px;
+            font-weight: normal;
+        }
+
+        .project-desc {
+            margin: 12px 0;
+            color: #34495e;
+        }
+
+        .tech-stack {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin-top: 12px;
+        }
+
+        .tech-tag {
+            background: #e8f4fd;
+            color: #2980b9;
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 0.8em;
+            font-family: 'Courier New', monospace;
+        }
+
+        /* Footer */
+        .footer {
+            background: #2c3e50;
+            color: #bdc3c7;
+            padding: 30px 40px;
+            text-align: center;
+            font-size: 0.9em;
+        }
+
+        .footer a {
+            color: #3498db;
+            text-decoration: none;
+        }
+
+        .footer a:hover {
+            text-decoration: underline;
+        }
+
+        .last-updated {
+            margin-top: 15px;
+            font-size: 0.85em;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .header, .section {
+                padding: 20px;
+            }
+            .proposal-note {
+                margin: 15px;
+                padding: 15px;
+            }
+            .project-title {
+                font-size: 1.2em;
+            }
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <!-- Header -->
+    <div class="header">
+        <h1>📁 Chuming Chen</h1>
+        <p>Software Projects Portfolio — Created & Owned Repositories</p>
+        <div class="verification-badge">
+            ✅ Ownership verified via GitHub <code>creator:chenc</code> filter within my organization<br>
+            🔗 <a href="https://github.com/orgs/YOUR-ORG-NAME/repositories?q=creator:YOUR-USERNAME" target="_blank">Verify on GitHub →</a>
+        </div>
+    </div>
+
+    <!-- PROPOSAL RELEVANCE NOTE (Strategic) -->
+    <div class="proposal-note">
+        <strong>📌 For Proposal Reference:</strong> This page lists software projects I have created, own, and maintain. 
+        Projects marked with <span style="background:#27ae60; color:white; padding:2px 8px; border-radius:12px; font-size:0.8em;">✅ Proposal-Ready</span> are directly relevant to my current proposal. 
+        Full source code and contribution history available upon request.
+    </div>
+
+    <!-- RECENT & ACTIVE PROJECTS (Add your GitHub org repos here) -->
+    <div class="section">
+        <h2 class="section-title">🚀 Recent & Active Projects</h2>
+        <div class="project-grid">
+            <!-- Example 1: Replace with your actual recent repo -->
+            <div class="project-card">
+                <div class="project-title">
+                    Internal API Gateway Service
+                    <span class="project-year">2024</span>
+                    <span class="relevance-badge">✅ Proposal-Ready</span>
+                </div>
+                <div class="project-desc">
+                    Owner and creator. Manages routing, rate limiting, and authentication for 15+ microservices. 
+                    Handles ~10K requests/day with 99.9% uptime. Deployed via Docker Compose on internal infrastructure.
+                </div>
+                <div class="tech-stack">
+                    <span class="tech-tag">Node.js</span>
+                    <span class="tech-tag">Express</span>
+                    <span class="tech-tag">Redis</span>
+                    <span class="tech-tag">Docker</span>
+                    <span class="tech-tag">GitHub Actions</span>
+                </div>
+            </div>
+
+            <!-- Example 2: Add another recent project from your org -->
+            <div class="project-card">
+                <div class="project-title">
+                    Automated Deployment Pipeline
+                    <span class="project-year">2023-2024</span>
+                    <span class="relevance-badge">✅ Proposal-Ready</span>
+                </div>
+                <div class="project-desc">
+                    CI/CD automation framework reducing deployment time by 60%. Integrates with GitHub, runs 
+                    comprehensive test suites, and deploys to staging/production environments.
+                </div>
+                <div class="tech-stack">
+                    <span class="tech-tag">GitHub Actions</span>
+                    <span class="tech-tag">Python</span>
+                    <span class="tech-tag">Bash</span>
+                    <span class="tech-tag">AWS CLI</span>
+                </div>
+            </div>
+
+            <!-- Add more recent projects here following the same pattern -->
+        </div>
+        <p style="margin-top: 15px; font-style: italic; color: #7f8c8d;">
+            💡 <strong>To update:</strong> Replace the example projects above with your actual organization repositories.
+            Each project card includes title, year, description, and tech stack tags.
+        </p>
+    </div>
+
+    <!-- ESTABLISHED PROJECTS (From original software.html, preserved) -->
+    <div class="section">
+        <h2 class="section-title">📚 Established Projects Portfolio</h2>
+        <div class="project-grid">
+            
+            <div class="project-card">
+                <div class="project-title">Bacterial Pathogene Diagnostics <span class="project-year">2010</span></div>
+                <div class="project-desc">Sequence analysis to identify Category A bacterial pathogen proteins and species identification from host DNA.</div>
+                <div class="tech-stack"><span class="tech-tag">Perl</span><span class="tech-tag">Bash</span><span class="tech-tag">BLASTp/BLASTx/tBLASTn</span><span class="tech-tag">HTML</span></div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-title">UniProt Representative Proteomes <span class="project-year">2010</span></div>
+                <div class="project-desc">Stable, unbiased proteome set for functional annotation and protein classification.</div>
+                <div class="tech-stack"><span class="tech-tag">Perl</span><span class="tech-tag">Bash</span><span class="tech-tag">HTML</span></div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-title">URA — UniRule Annotation <span class="project-year">2009</span></div>
+                <div class="project-desc">Web-based automated protein annotation system.</div>
+                <div class="tech-stack"><span class="tech-tag">Oracle</span><span class="tech-tag">Hibernate</span><span class="tech-tag">Java</span><span class="tech-tag">JSP/JSF</span><span class="tech-tag">Tomcat</span></div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-title">OWLMan <span class="project-year">2008</span></div>
+                <div class="project-desc">Scalable management framework for large-scale OWL ontologies.</div>
+                <div class="tech-stack"><span class="tech-tag">Java</span><span class="tech-tag">MySQL</span><span class="tech-tag">OWLAPI</span><span class="tech-tag">Pellet</span></div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-title">OntoCM <span class="project-year">2007</span></div>
+                <div class="project-desc">Change metrics suite for evolving OWL ontologies (class, definition, hierarchy, axiom metrics).</div>
+                <div class="tech-stack"><span class="tech-tag">Java</span><span class="tech-tag">OWLAPI</span><span class="tech-tag">Pellet</span></div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-title">DBBE Website <span class="project-year">2006</span></div>
+                <div class="project-desc">Department of Biostatistics, Bioinformatics and Epidemiology (MUSC) website.</div>
+                <div class="tech-stack"><span class="tech-tag">PHP</span><span class="tech-tag">HTML/CSS</span><span class="tech-tag">MySQL</span></div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-title">Parallel fMRI Data Mining <span class="project-year">2006</span></div>
+                <div class="project-desc">Parallel Bayesian probabilistic component analysis for deception detection brain imaging.</div>
+                <div class="tech-stack"><span class="tech-tag">Matlab</span><span class="tech-tag">MPI</span><span class="tech-tag">Linux Cluster</span></div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-title">OMSSAWeb <span class="project-year">2006</span></div>
+                <div class="project-desc">Web interface for OMSSA MS/MS search engine with PBS cluster scheduling and email notifications.</div>
+                <div class="tech-stack"><span class="tech-tag">CGI/Perl</span><span class="tech-tag">Linux Cluster</span><span class="tech-tag">PBS/Maui</span></div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-title">WWWmpiBlast <span class="project-year">2006</span></div>
+                <div class="project-desc">Web frontend for parallel BLAST search on Linux cluster with LDAP authentication.</div>
+                <div class="tech-stack"><span class="tech-tag">CGI/Perl</span><span class="tech-tag">Linux Cluster</span><span class="tech-tag">mpiBLAST</span><span class="tech-tag">LDAP</span></div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-title">Universal LIMS <span class="project-year">2005</span></div>
+                <div class="project-desc">Laboratory Information Management System initial release.</div>
+                <div class="tech-stack"><span class="tech-tag">PHP</span><span class="tech-tag">HTML/CSS/JS</span><span class="tech-tag">MySQL/PostgreSQL</span></div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-title">AGML Central <span class="project-year">2005</span></div>
+                <div class="project-desc">XML parser for Melanie 2-DE gel data and visualization tool.</div>
+                <div class="tech-stack"><span class="tech-tag">PHP</span><span class="tech-tag">Matlab</span><span class="tech-tag">Java Applet</span><span class="tech-tag">PostgreSQL</span></div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-title">Online Gradebook <span class="project-year">2004</span></div>
+                <div class="project-desc">Course assignment dropbox used by 2000+ students per semester.</div>
+                <div class="tech-stack"><span class="tech-tag">Tomcat</span><span class="tech-tag">JSP</span><span class="tech-tag">MySQL</span></div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-title">NessusWeb <span class="project-year">2003</span></div>
+                <div class="project-desc">Open source web interface for Nessus network security scanner with SSL and access control.</div>
+                <div class="tech-stack"><span class="tech-tag">Nessus</span><span class="tech-tag">Tomcat/JSP</span><span class="tech-tag">MySQL</span><span class="tech-tag">JSSE</span></div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-title">Choice Apparel System <span class="project-year">2003</span></div>
+                <div class="project-desc">Order entry and inventory management for wholesale dealer.</div>
+                <div class="tech-stack"><span class="tech-tag">VB.NET</span><span class="tech-tag">ASP.NET</span><span class="tech-tag">ADO.NET</span><span class="tech-tag">SQL Server</span></div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-title">Non-destructive Integrity Evaluation <span class="project-year">2001</span></div>
+                <div class="project-desc">Multi-channel non-destructive integrity evaluation program.</div>
+                <div class="tech-stack"><span class="tech-tag">LabView</span></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+        <p>© Chuming Chen — All projects listed are created and owned by Chuming Chen</p>
+        <p>
+            <a href="https://github.com/YOUR_USERNAME" target="_blank">GitHub Profile</a> | 
+            <a href="https://www.eecis.udel.edu/~chenc/" target="_blank">Homepage</a> |
+            <a href="mailto:chenc@udel.edu">Email</a>
+        </p>
+        <div class="last-updated">
+            📅 Last updated: April 15, 2026
+        </div>
+    </div>
+</div>
+</body>
+</html>
