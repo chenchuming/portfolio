@@ -699,9 +699,19 @@
                 <a href="https://www.eecis.udel.edu/~chenc/" target="_blank">Homepage</a> |
                 <a href="mailto:chenc@udel.edu">Email</a>
             </p>
+            <!-- <div class="last-updated">
+                📅 Last updated: April 24, 2026
+            </div> -->
             <div class="last-updated">
-                📅 Last updated: April 15, 2026
+                📅 Last updated: <span id="last-updated"></span>
             </div>
+
+            <script>
+                const date = new Date(document.lastModified);
+                const options = { year: 'numeric', month: 'long', day: 'numeric' };
+                document.getElementById('last-updated').textContent =
+                    date.toLocaleDateString('en-US', options);
+            </script>
         </div>
     </div>
 </body>
